@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e6ef; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.invitation-card {
+    background-image: url("paper-texture-background.jpg"); /* Set background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px; /* Max width for card */
+    position: relative;
+}
+
+.event{
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive; /* Playful font */
+    margin-bottom: 0.5em;
+    color: #8c2947; /* Burgundy color */
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #8c2947;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.list {
+  list-style-type: none; /* remove standard list styles */
+    padding: 0;
+    margin: 0;
+    color: #8c2947; /* Burgundy color */
+}
+
+.list li{
+    margin-bottom: 0.3em; /* spacing between names */
+    text-align: left; /* Align list items to the left */
+}
+/* Add a "sparkle" effect (just like on the image) */
+.invitation-card::before,
+.invitation-card::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.invitation-card::before {
+    width: 10px;
+    height: 10px;
+    top: 5%;
+    left: 10%;
+}
+
+.invitation-card::after {
+    width: 15px;
+    height: 15px;
+    bottom: 10%;
+    right: 15%;
+}
+/* add custom font  */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');

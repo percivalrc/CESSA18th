@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e6ef; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.invitation-card {
+    background-image: url("paper-texture-background.jpg"); /* Set background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px; /* Max width for card */
+    position: relative;
+}
+
+.event{
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive; /* Playful font */
+    margin-bottom: 0.5em;
+    color: #8c2947; /* Burgundy color */
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: #8c2947;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.list {
+  list-style-type: none; /* remove standard list styles */
+    padding: 0;
+    margin: 0;
+    color: #8c2947; /* Burgundy color */
+}
+
+.list li{
+    margin-bottom: 0.3em; /* spacing between names */
+    text-align: left; /* Align list items to the left */
+}
+
+.dress-code {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #8c2947;
+}
+.white {
+    font-weight: bold;
+}
+
+.pink-note{
+ font-size: 0.9em;
+ margin-top: 0.3em;
+}
+.pantone-squares {
+    display: flex;
+    justify-content: space-evenly; /* Distribute the squares evenly */
+    margin: 10px 0;
+}
+
+.square {
+  width: 60px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+  text-align: center;
+  color: black; /* Text color for all squares */
+  border: 1px solid lightgray;
+}
+.white-square {
+  background-color: white;
+}
+
+.light-pink {
+    background-color: #ffd2d8; /* Adjust the color to match your pink shade */
+}
+
+.baby-pink{
+    background-color: #ffbfcc;
+}
+
+.orchid-pink {
+    background-color: #ffb2b9; /* Adjust the color to match your pink shade */
+}
+.pink-pallette {
+  height: 20px;
+    margin-top: 5px;
+    background: linear-gradient(to right, #ffb2b9, #ffbfcc, #ffd2d8, white );
+}
+
+.invitation-message {
+     color: #8c2947;
+     font-size: 0.9em;
+     margin-bottom: 1em;
+      line-height: 1.3;
+}
+.reminder{
+    font-size: 0.8em;
+    margin-top: 1em;
+    font-style: italic;
+}
+/* Add a "sparkle" effect (just like on the image) */
+.invitation-card::before,
+.invitation-card::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.invitation-card::before {
+    width: 10px;
+    height: 10px;
+    top: 5%;
+    left: 10%;
+}
+
+.invitation-card::after {
+    width: 15px;
+    height: 15px;
+    bottom: 10%;
+    right: 15%;
+}
+/* add custom font  */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
